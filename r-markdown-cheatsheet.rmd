@@ -1,0 +1,105 @@
+---
+title: "r-markdown-cheatsheet"
+---
+<hr></hr>
+<br></br>
+
+
+## R Markdown
+R Markdown is a format for writing reproducible reports in R. It uses a simple formatting syntax which can be used to mix text, code, images or plots and to write output in HTML, PDF, and Microsoft Word documents. 
+<hr></hr>
+
+## Markdown syntax
+`This is a plain text line without any formatting.  `
+This is a plain text line without any formatting.  
+
+`*This text is in italics*  `
+*This text is in italics*  
+
+`_as is this text_  `
+_as is this text_  
+
+`**This text is in bold**  `
+**This text is in bold**  
+
+`__as is this text__  `
+__as is this text__  
+
+`This text shows ^superscript^  `
+This text shows ^superscript^  
+
+`This text is ~~strikethrough~~  `
+This text is ~~strikethrough~~  
+
+Mix html tags e.g. a horizontal rule here with \<hr\> \<\/hr\>tag:
+<hr></hr>
+
+`End a line with two spaces to start a new paragraph.  `  
+End a line with two spaces to start a new paragraph.  
+
+`# Header 1 format  `  
+
+# Header 1 format  
+
+`## Header 2 format  `  
+
+## Header 2 format  
+
+`### Header 3 format  `  
+
+### Header 3 format  
+
+`#### Header 4 format  `  
+
+#### Header 4 format  
+
+`##### Header 5 format  `  
+
+##### Header 5 format  
+
+`###### Header 6 format  `
+
+###### Header 6 format  
+
+`[Link to my Github page](github.com/dnafrance)  `
+[Link to my Github page](github.com/dnafrance)  
+
+Embed code with knitr syntax. R executes code and displays the output.  
+``Simple arithmetic with inline code: ` r 3 + 7 ` ``
+Simple arithmetic with inline code: `r 3 + 7`  
+
+\` Display code format with backticks \` 
+`Display code format with backticks`  
+
+`> block quote` 
+
+> block quote
+
+
+`* unordered list`  
+`* item 2`  
+  `   + sub-item 1`  
+  `   + sub-item 2`  
+
+* unordered list
+* item 2
+    + sub-item 1
+    + sub-item 2
+
+`1. ordered list`  
+`2. item 2`  
+  `   + sub-item 1`  
+  `   + sub-item 2`  
+  
+1. ordered list
+2. item 2
+    + sub-item 1
+    + sub-item 2
+ 
+Embedded plots:  
+` ```{r, echo=TRUE}
+plot(cars)
+``` `  
+```{r, echo=TRUE}
+plot(cars)
+```
